@@ -1,0 +1,90 @@
+21-February-2022 08:20:52---Student: you
+21-February-2022 08:20:52----Code compilesPASS
+Launch Suite:
+  21-February-2022 08:20:54----Process exits shell with correct return code:OK
+  21-February-2022 08:20:55----Shell message is displayed:OK
+Result:PASS
+Unknown Command Message:
+  21-February-2022 08:20:56----Unknown command should display corresponding message:OK
+  21-February-2022 08:20:57----Multiple unknown commands:OK
+Result:PASS
+Long Command Message:
+  21-February-2022 08:20:58----Long command input is invalid:OK
+  21-February-2022 08:20:59----Long command message takes priority:OK
+Result:PASS
+Echo Simple Messages:
+  21-February-2022 08:21:00----Echo of one character displays correctly:OK
+  21-February-2022 08:21:01----Echo of simple message displays correctly:OK
+  21-February-2022 08:21:02----Echo of simple message displays correctly v3:OK
+  21-February-2022 08:21:03----Echo of simple message displays correctly v3:OK
+  21-February-2022 08:21:04----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  21-February-2022 08:21:05----Echo of mixed message displays correctly:OK
+  21-February-2022 08:21:06----echo with quotes has no special meaning:OK
+  21-February-2022 08:21:07----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  21-February-2022 08:21:08----Two echo commands display correctly:OK
+  21-February-2022 08:21:09----Two echo commands do not show error:OK
+  21-February-2022 08:21:10----Echo commands work while other commands error:OK
+Result:PASS
+Simple variables accesses:
+  21-February-2022 08:21:11----Declare and access a single variable:OK
+  21-February-2022 08:21:12----Declare and access a single variable:OK
+Result:PASS
+Variable integration with other commands:
+  21-February-2022 08:21:13----Declare a single variable:OK
+  21-February-2022 08:21:14----Declare and access two variables:OK
+Result:PASS
+Custom variable accesses:
+  21-February-2022 08:21:15----Access variables in separate lines:OK
+  21-February-2022 08:21:16----Access variables in separate lines v2:OK
+Result:PASS
+Echo without variables displays plain text:
+  21-February-2022 08:21:17----Variables access with $ is bound to name:OK
+  21-February-2022 08:21:18----Non-existing variable displays as plain text:OK
+Result:PASS
+Variable values can be redefined:
+  21-February-2022 08:21:19----Variable value is redefined appropriately:OK
+  21-February-2022 08:21:20----Variable value is redefined appropriately v2:OK
+Result:PASS
+Variable formatting edge cases:
+  21-February-2022 08:21:21----Variables accesses separate by the first equal:OK
+  21-February-2022 08:21:22----Variable declaration with spaces is not supported:OK
+Result:PASS
+Advanced tests:
+  21-February-2022 08:21:23----Declare and access 100 variables:OK
+Result:PASS
+Sample ls runs:
+  21-February-2022 08:21:27----Create a single sub-directory with a single file:NOT OK
+  21-February-2022 08:21:28----Create a single sub-directory with multiple files:NOT OK
+  21-February-2022 08:21:29----ls a directory:NOT OK
+Result:FAIL
+Sample cd runs:
+  21-February-2022 08:21:30----cd into a directory and display the files:NOT OK
+  21-February-2022 08:21:31----cd into a nested directory and display the files:NOT OK
+Result:FAIL
+ls error handling:
+  21-February-2022 08:21:32----ls on an invalid path reports an error:OK
+Result:PASS
+ls handles edge cases correctly:
+  21-February-2022 08:21:33----ls a single file through a variable identifier:NOT OK
+  21-February-2022 08:21:34----Create a single sub-directory, and ls into that directory:OK
+Result:FAIL
+ls filters files correctly:
+  21-February-2022 08:21:35----ls correctly filters files:NOT OK
+  21-February-2022 08:21:36----ls correctly filters files v2:NOT OK
+Result:FAIL
+Recursive ls displays files correctly:
+  21-February-2022 08:21:37----Recursive ls with depth 1 does not capture inner files:NOT OK
+OK
+  21-February-2022 08:21:38----Recursive ls with depth 2 captures inner files:NOT OK
+  21-February-2022 08:21:39----Recursive ls supports --d argument before --rec:NOT OK
+OK
+Result:FAIL
+Advanced Tests:
+  21-February-2022 08:21:40----Recursive ls correctly searches files in sub-directories:NOT OK
+Result:FAIL
+21-February-2022 08:21:41--- Suites Passed 15.0/21.0
+21-February-2022 08:21:41 FINISHED
